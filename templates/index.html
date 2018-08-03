@@ -42,6 +42,7 @@
 	                                </dd>
                                 </dl>
                                 <div class="btn">
+                                    {{ username }}
 	                                <a class="personcenter fl" href="usercenter-info.html">进入个人中心</a>
 	                                <a class="fr" href="/logout/">退出</a>
                                 </div>
@@ -88,7 +89,7 @@
 
             <div class="middle">
                 <div class="wp">
-                    <a href="index.html"><img class="fl" src="{% static 'images/logo.jpg' %}"/></a>
+                    <a href="{% url 'index' %}"><img class="fl" src="{% static 'images/logo.jpg' %}"/></a>
                     <div class="searchbox fr">
                         <div class="selectContainer fl">
                             <span class="selectOption" id="jsSelectOption" data-value="course">
