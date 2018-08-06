@@ -9,9 +9,9 @@ from .models import CourseOrg, CityDict, Teacher
 
 class CourseOrgAdmin(object):
 
-    list_display = ['name', 'click_nums', 'fav_nums', 'students', 'city', 'add_time']
+    list_display = ['name', 'click_nums', 'fav_nums', 'students', 'catgory', 'city', 'add_time']
     search_fields = ['name', 'click_nums', 'fav_nums', 'students']
-    list_filter = ['name', 'click_nums', 'fav_nums', 'students', 'city', 'add_time']
+    list_filter = ['name', 'click_nums', 'fav_nums', 'students', 'city', 'catgory', 'add_time']
 
 
 class CityDictAdmin(object):
