@@ -1,3 +1,5 @@
+# _*_ coding:utf-8 _*_
+
 """
 Django settings for mxonline project.
 
@@ -51,6 +53,7 @@ INSTALLED_APPS = [
     'xadmin',
     'crispy_forms',
     'captcha',
+    'pure_pagination',
 ]
 AUTH_USER_MODEL = 'users.USERPROFILE'
 MIDDLEWARE_CLASSES = [
@@ -152,3 +155,11 @@ EMAIL_FROM = "peiqimx@sina.com"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#分页配置
+PAGINATION_SETTINGS = {
+    'PAGE_RANGE_DISPLAYED': 10,
+    'MARGIN_PAGES_DISPLAYED': 2,
+
+    'SHOW_FIRST_PAGE_WHEN_INVALID': True,
+}

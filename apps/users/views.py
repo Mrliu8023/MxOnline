@@ -11,11 +11,6 @@ from .models import UserProfile, EmailVerifyRecord
 from .forms import LoginForm, RegisterForm, ForgetForm, ModifypwdForm
 from utils.email_send import send_rigister_email
 
-# Create your views here.
-
-
-
-
 
 class ActiveUserView(View):
     def get(self,request,active_code):
